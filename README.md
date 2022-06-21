@@ -1,4 +1,4 @@
-# CoinX
+### CoinX
 
 A multi-page price-tracking application for crypto assets developed using ReactJS.
 
