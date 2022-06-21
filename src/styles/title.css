@@ -1,0 +1,31 @@
+.container-title-wrapper {
+    padding-block: 15px;
+    /* padding-bottom: 30px; */
+    display: flex;
+    justify-content: center;
+}
+
+.container-title {
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.container-title > p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-subtitle {
+    color: var(--text-secondary);
+}
+
+.container-subtitle > span {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 550px) {
+    .container-title > p:first-child {
+        font-size: 18px;
+    }
+}

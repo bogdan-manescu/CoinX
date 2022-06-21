@@ -1,0 +1,161 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --change-up: rgb(22, 199, 132);
+    --change-down: rgb(234, 57, 67);
+    --text-primary: #171924;
+    --text-secondary: #58667e;
+    --table-border: #58667e30;
+    --table-color: white;
+    --btn-active-outer: #5a42ec; /*#5a42ec*/
+    --btn-active-inner: white;
+    --btn-hover: #eff2f5;
+    --scrollbar-color: #cfd6e4;
+    --progress-bar: #eff2f5;
+    --box-shadow: 0px 0px 2px rgba(128, 138, 157, 0.12), 0px 0px 24px rgba(128, 138, 157, 0.14);
+    --carousel-next: linear-gradient(to left, white 0%, transparent 100%);
+    --carousel-prev: linear-gradient(to right, white 0%, transparent 100%);
+    --max-width: 1100px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: var(--scrollbar-color);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+p {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    /* vertical-align: text-top; */
+}
+
+.icon-wrapper {
+    /* line-height: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-inline: 5px !important;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    min-width: 32px;
+    width: auto;
+    height: 32px;
+    padding-inline: 10px !important;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease-out 0s;
+}
+
+.icon-wrapper:hover {
+    cursor: pointer;
+}
+
+.chevron {
+    line-height: 0;
+    margin: 0px !important;
+}
+
+.page:hover {
+    background-color: var(--btn-hover);
+    color: var(--text-primary);
+}
+
+.active {
+    background-color: var(--btn-active-outer) !important;
+    color: var(--btn-active-inner) !important;
+}
+
+.selected {
+    color: var(--text-primary) !important;
+    background-color: white;
+}
+
+.hoverable:hover {
+    cursor: pointer;
+}
+
+.tag {
+    padding-inline: 10px;
+    padding-block: 2px;
+    border-radius: 8px;
+    min-width: 32px;
+    height: fit-content;
+    white-space: nowrap;
+    text-align: center;
+    background-color: var(--btn-hover);
+}
+
+.tag > p {
+    color: var(--text-secondary);
+}
+
+.tag-active {
+    background-color: var(--text-secondary);
+}
+
+.tag-active > p {
+    color: white !important;
+}
+
+@media screen and (max-width: 390px) {
+    .icon-wrapper {
+        margin-inline: 1px !important;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .icon-wrapper {
+        margin-inline: 0 !important;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .chevron {
+        display: none;
+    }
+}
+
+/* background: #4568DC; 
+background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  
+background: linear-gradient(to right, #B06AB3, #4568DC); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/* background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+
+/* background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
