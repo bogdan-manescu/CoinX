@@ -9,5 +9,5 @@ It consists of:
 -   The Converter page where users can see the exchange rates between major fiat currencies and cryptocurrencies and also further detailed statistics about the selected cryptocurrency.
 -   Dedicated crypto asset page displaying detailed statistics such as name, symbol, rank, price, market cap, daily volume, circulating supply, daily change, main chart where users can choose the preferred time frame and lastly the about section featuring a short description of the asset.
 
-At the top of every page is displayed global light-weight crypto data.
+At the top of every page is displayed global light-weight crypto data. </br>
 The project is estimated at around 4500 lines of code.
