@@ -15,7 +15,7 @@ const Header = ({ stats, setStats, setCurrentPage }) => {
     const navigate = useNavigate();
 
     const [toggleMenu, setToggleMenu] = useState(false);
-    const [path, setPath] = useState(window.location.pathname.split("/")[1]);
+    const [path, setPath] = useState(window.location.pathname.split("/")[1] || "cryptocurrencies");
 
     // const [stats, setStats] = useState();
     const getGlobalDataPromise = Promise.resolve(GetGlobalData());
